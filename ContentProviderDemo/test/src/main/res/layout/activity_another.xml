@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="内容提供者实例"
+        android:textSize="30dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_alignEnd="@+id/textView1"
+        android:hint="姓名"
+        android:textColorHint="@android:color/holo_blue_light" />
+
+    <EditText
+        android:id="@+id/et_classmate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_name"
+        android:layout_alignStart="@+id/et_name"
+        android:layout_alignEnd="@+id/et_name"
+        android:hint="年级"
+        android:textColorHint="@android:color/holo_blue_bright" />
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_classmate"
+        android:layout_alignStart="@+id/et_classmate"
+        android:layout_alignEnd="@+id/et_classmate"
+        android:hint="年龄"
+        android:textColorHint="@android:color/holo_blue_bright" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/et_age"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_alignEnd="@+id/textView1"
+        android:onClick="onClickAddName"
+        android:text="添加" />
+
+    <Button
+        android:id="@+id/btn_query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_add"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_alignEnd="@+id/textView1"
+        android:onClick="onClickRetrieveStudent"
+        android:text="查询" />
+
+</RelativeLayout>

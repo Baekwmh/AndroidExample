@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SQLiteDemo</string>
+
+    <string-array name="classmate_arr">
+        <item>移动1811</item>
+        <item>移动1813</item>
+        <item>移动1823</item>
+    </string-array>
+</resources>

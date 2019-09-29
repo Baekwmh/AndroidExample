@@ -109,7 +109,7 @@ public class SimpleImageViewV2 extends View {
         canvas.rotate(90);
         mBitmapPaint.setColor(Color.YELLOW);
         mBitmapPaint.setTextSize(30);
-        canvas.drawText("AngelaBaby", getLeft() + 50, getTop() + 50, mBitmapPaint);
+        canvas.drawText("AngelaBaby", getLeft() + 50, getTop() - 50, mBitmapPaint);
         canvas.restore();
     }
 }

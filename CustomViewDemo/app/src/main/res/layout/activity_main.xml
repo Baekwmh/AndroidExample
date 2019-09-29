@@ -1,18 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <edu.niit.android.customview.CustomToolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <edu.niit.android.customview.SimpleImageViewV2
+            app:src="@drawable/icon_400"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="300dp" />
+
+        <edu.niit.android.customview.MeaturedCircleImageView
+            app:src="@drawable/icon_400"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <edu.niit.android.customview.HorizontalView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/lv_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ListView
+                android:id="@+id/lv_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </edu.niit.android.customview.HorizontalView>
+    </LinearLayout>
+</LinearLayout>
